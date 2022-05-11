@@ -1,4 +1,8 @@
 .Messages {
-  width: 80%;
+  width: 50%;
   margin: 3% auto 0px;
+  
+  @include breakpoint(small only) {
+    width: 80%;
+  }
 }
