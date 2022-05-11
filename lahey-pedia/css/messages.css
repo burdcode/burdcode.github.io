@@ -1,8 +1,3 @@
-@keyframes animated_div {
-  0%   {left:3%;}
-  100% {left:97%;}
-}
-
 background {
   background: #eff7ff;
 }
@@ -26,6 +21,11 @@ background {
     top: 30%;
 }
 
+@keyframes animated_div {
+  0%   {left:3%;}
+  100% {left:97%;}
+}
+
 .Arrow {
     width: 0;
     height: 0;
@@ -38,10 +38,6 @@ background {
 .Messages {
   width: 50%;
   margin: 3% auto 0px;
-  
-  @include breakpoint(small only) {
-    width: 80%;
-  }
 }
 
 .Quote {
