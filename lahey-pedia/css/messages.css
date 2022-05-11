@@ -1,3 +1,11 @@
+@keyframes example {
+  0%   {left:0px; top:0px;}
+  25%  {left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
 .Animated-div{
     width: 100px;
     height: 47px;
@@ -11,9 +19,30 @@
     -moz-animation: animated_div 5s 1;
     -webkit-animation: animated_div 5s 1;
     -o-animation: animated_div 5s 1;
-    animation-direction: alternate;
+    animation-direction: alternate;  
+    animation-iteration-count: infinite;
     border-radius: 5px;
     -webkit-border-radius: 5px;
+}
+
+.Arrow {
+    @unitSize: 20px;
+	width: 0;
+	height: 0;
+	border-top: @unitSize solid transparent;
+	border-left: (@unitSize * 2) solid red;
+	border-bottom: @unitSize solid transparent;
+	margin-left:  @unitSize;
+	
+	&:before {
+		content: "";
+		position: absolute;
+		width: @unitSize ;
+		height: @unitSize / 2;
+		background: red;
+		left: 0;
+		top: @unitSize / 1.4;
+	}
 }
 
 .Messages {
