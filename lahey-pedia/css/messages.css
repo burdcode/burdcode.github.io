@@ -1,3 +1,21 @@
+.Animated-div{
+    width: 100px;
+    height: 47px;
+    background: #7c334f;
+    color: #ffffff;
+    position: relative;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px;
+    animation: animated_div 5s 1;
+    -moz-animation: animated_div 5s 1;
+    -webkit-animation: animated_div 5s 1;
+    -o-animation: animated_div 5s 1;
+    animation-direction: alternate;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
 .Messages {
   width: 50%;
   margin: 3% auto 0px;
