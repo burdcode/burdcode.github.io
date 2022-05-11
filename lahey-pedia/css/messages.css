@@ -22,8 +22,8 @@ body {
 }
 
 @keyframes animated_div {
-  0%   {left:3%;}
-  100% {left:90%;}
+  0%   {left:3%; transform: rotate(0deg);}
+  100% {left:90%; transform: rotate(360deg);}
 }
 
 .Arrow {
