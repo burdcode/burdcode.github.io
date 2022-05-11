@@ -1,4 +1,4 @@
-@keyframes example {
+@keyframes animated_div {
   0%   {left:3%;}
   100% {left:97%;}
 }
